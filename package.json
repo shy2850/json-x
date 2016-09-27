@@ -1,0 +1,24 @@
+{
+  "name": "json-x",
+  "version": "0.1.0",
+  "description": "JSON.format to stringify a circular structure Object",
+  "main": "json.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shy2850/json-x.git"
+  },
+  "keywords": [
+    "json-x",
+    "json",
+    "json-format"
+  ],
+  "author": "shy2850",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shy2850/json-x/issues"
+  },
+  "homepage": "https://github.com/shy2850/json-x#readme"
+}

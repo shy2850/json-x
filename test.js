@@ -1,12 +1,4 @@
-# json-x
-JSON.format to stringify a circular structure Object
-
-> npm install json-x
-
-
-`test.js`
-```
-var JSON_X = require('json-x').JSON;
+var JSON_X = require('./json').JSON;
 
 var a = {name: 'a'};
 var b = {name: 'b', parent: a};
@@ -32,6 +24,7 @@ catch (e) {
  */
 var str_circular = JSON_X.stringify(c, '  '/*format with 4 blanks*/, '$'/*Special char*/, true);
 console.log(str_circular);
+
 /*
 {
   "a":{
@@ -58,8 +51,8 @@ var rebuild = JSON_X.parse(str_circular, true/*是否回转function*/);
 
 rebuild.go();
 
+
 /**
  * show structure of global
  */
 console.log(JSON_X.stringify(global, ' ', '$'));
-```
